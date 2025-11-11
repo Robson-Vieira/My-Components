@@ -1,3 +1,8 @@
+:root{
+    --primary-color:#FF7833;
+    --secundary-color:#31333B;
+    --text-color:#E7E7E7;  
+}
 html, body{
     
     font-size: 62,5%;
@@ -17,7 +22,7 @@ body{
 
 .navegacao{
     width: 14rem;
-    background-color: rgba(14, 13, 13, 0.712);
+    background-color: var(--secundary-color);
     display: flex;
     flex-direction: column;
 }
@@ -54,13 +59,13 @@ ul{
     border-bottom: 1px solid white;
     text-decoration: none;
     text-align:end;
-    
 }
 
 a{
-    color:antiquewhite;
+    color:var(--text-color);
     text-decoration: none;
     text-transform: capitalize;
+    display: block;
 }
 
 .links:hover{
@@ -71,11 +76,9 @@ a{
 }
 
 main{
-   
     flex: 1;
     padding:5rem 0 0 3rem ;
-    
-    background-color: rgb(83, 78, 72,.5);
+    background-color: #444856;
 }
 
 main h1{
@@ -86,14 +89,14 @@ main h1{
 
 .primeiro__paragrafo{
     font-size: 1.6rem;
-    color: orangered;
+    color: var(--primary-color);
     font-weight: 700;
     margin:0;
     padding: 0;
 }
 
 .segundo__paragrafo{
-    color: orangered;
+    color: var(--primary-color);
     font-size: 1.2rem;
     margin: 0 0 1rem 0;
     padding: 0;
@@ -101,7 +104,7 @@ main h1{
 }
 
 .terceiro__paragrafo{
-    color: #d4d3d3;
+    color: var(--text-color);
     margin-bottom: 2rem;
 }
 
